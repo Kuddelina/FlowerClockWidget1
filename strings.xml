@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Flower Clock</string>
+    <string name="widget_name">Flower Clock</string>
+    <string name="widget_description">A beautiful hand-painted flower clock widget</string>
+</resources>

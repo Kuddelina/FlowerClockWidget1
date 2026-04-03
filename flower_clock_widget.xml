@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    RemoteViews only supports a small subset of layouts/views.
+    We use a FrameLayout with ImageViews stacked on top of each other.
+    The hands are rotated via RemoteViews.setFloat(..., "setRotation", angle).
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <!-- Clock face -->
+    <ImageView
+        android:id="@+id/clock_face"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/clock_face"
+        android:scaleType="fitXY"
+        android:contentDescription="Clock face" />
+
+    <!-- Hour hand - pivot at center of widget -->
+    <ImageView
+        android:id="@+id/hand_hour"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/hand_hour"
+        android:scaleType="fitXY"
+        android:contentDescription="Hour hand" />
+
+    <!-- Minute hand -->
+    <ImageView
+        android:id="@+id/hand_minute"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/hand_minute"
+        android:scaleType="fitXY"
+        android:contentDescription="Minute hand" />
+
+    <!-- Second hand -->
+    <ImageView
+        android:id="@+id/hand_second"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/hand_second"
+        android:scaleType="fitXY"
+        android:contentDescription="Second hand" />
+
+</FrameLayout>
